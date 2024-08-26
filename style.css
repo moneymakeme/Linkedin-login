@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#fb009f,#51e2f5);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container{
+    text-align: center;
+}
+.text{
+    color: #fff;
+    letter-spacing: 1px;
+    margin: 10px;
+}
+.page{
+    width: 400px;
+    background: #cccc;
+    border-radius: 15px;
+    padding-bottom: 15px;
+}
+
+.title{
+    padding: 30px;
+    color: #0077b5;
+    text-decoration: none;
+    font-size: 25px;
+    font-family:Cambria, Cochin, Georgia, Times,
+     'Times New Roman', serif;
+}
+
+form{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+form input{
+    margin-bottom: 8px;
+    border: 1px solid brown;
+    border-radius: 3px;
+    outline: none;
+}
+
+form input:focus{
+    border: 1px solid #0077b5;
+    background: #efefef;
+}
+
+input[type="text"],input[type="password"]{
+    padding-left: 10px;
+    position: relative;
+    height: 35px;
+    font-size: 17px;
+}
+input::placeholder{
+    font-weight: normal;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+input:focus::placeholder{
+    position: absolute;
+    font-size: 15px;
+    transform: translateY(-50%);
+}
+
+form button{
+    border: none;
+    background: #0077b5;
+    padding: 8px;
+    margin-top: 5px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    outline: none;
+    cursor: pointer;
+}
+form button:active{
+    background: black;
+    transform: scale(0.995);
+}
+form .option{
+    color: black;
+    margin: 10px;
+    font-weight: bold;
+    position: relative;
+}
+form .option::before{
+    position: absolute;
+    content: '';
+    width: 37%;
+    height: 2px;
+    background: #021894;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50px;
+}
+form .option::after{
+    position: absolute;
+    content: '';
+    width: 37%;
+    height: 2px;
+    background: #021894;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50px;
+}
+.fblink{
+    margin-top: 15px;
+    width: 100%;
+}
+
+.fblink a{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: #021894;
+}
+
+.forget-id{
+    margin: 15px;
+}
+.forget-id a{
+    text-decoration: underline;
+    color: #025fd2;
+    font-size: 16px;
+    font-weight: 500;
+}
+.page .Signup{
+    position: relative;
+    border: 1px solid #0077b5;
+    border-radius:12px;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+}
+
+.Signup a{
+    margin-left: 5px;
+    color: #008aff;
+    font-weight: bold;
+    text-decoration: underline;
+}
